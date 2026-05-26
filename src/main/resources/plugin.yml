@@ -1,0 +1,75 @@
+name: ServerCore
+version: 26.1.2
+main: fabian.serverCore.ServerCore
+description: Core
+authors: [ Fabian ]
+depend: [ Vault ]
+softdepend: [ PlaceholderAPI ]
+
+commands:
+  msg:
+    description: Send a private message to a player
+    usage: /msg <nick> <message>
+  reply:
+    description: Reply to a private message
+    usage: /reply <message>
+  socialspy:
+    description: Spy on private messages
+    usage: /socialspy
+  tp:
+    description: Teleport to a player
+    usage: /tp <nick>
+  tphere:
+    description: Teleport a player to you
+    usage: /tphere <nick>
+  gamemode:
+    description: Change game mode
+    usage: /gamemode <0/1/2/3>
+  gm:
+    description: Change game mode (alias)
+    usage: /gm <0/1/2/3>
+  vanish:
+    description: Become invisible
+    usage: /vanish
+  helpop:
+    description: Send a message to staff
+    usage: /helpop <message>
+  userinfo:
+    description: Get information about a player
+    usage: /userinfo <nick>
+  fly:
+    description: Enable/disable flight mode
+    usage: /fly [nick]
+  ban:
+    description: Ban a player
+    usage: /ban <nick> <reason>
+  tempban:
+    description: Temporarily ban a player
+    usage: /tempban <nick> <time> <reason>
+  mute:
+    description: Mute a player
+    usage: /mute <nick> <time> <reason>
+  kick:
+    description: Kick a player
+    usage: /kick <nick> <reason>
+  unban:
+    description: Unban a player
+    usage: /unban <nick>
+  unmute:
+    description: Unmute a player
+    usage: /unmute <nick>
+  invsee:
+    description: View a player's inventory
+    usage: /invsee <nick>
+  clearchat:
+    description: Clear the chat
+    usage: /clearchat
+  setrank:
+    description: Set a player's rank
+    usage: /setrank <nick> <rank> [time]
+  time:
+    description: Set world time
+    usage: /time <day/night> <world>
+  weather:
+    description: Set world weather
+    usage: /weather <sun/rain> <world>

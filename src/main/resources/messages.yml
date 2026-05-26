@@ -1,4 +1,25 @@
-# ServerCore Messages Configuration File
-# Version: 26.1.2
+messages:
+  # /msg command messages
+  msg:
+    usage: "&c/msg <nick> <tekst>"
+    player_not_found: "&cGracz &e{player} &cnie znaleziony!"
+    sent: "&aWysłana wiadomość do &e{player}&a: &f{message}"
+    received: "&e{player} &fpisał do ciebie: &f{message}"
+    no_reply_target: "&cNie masz do kogo odpisać. Ostatnia wiadomość odebrałeś ponad 5 minut temu."
 
-# Messages go here
+  # /reply command messages
+  reply:
+    usage: "&c/reply <tekst>"
+    no_target: "&cNie masz do kogo odpisać. Ostatnia wiadomość odebrałeś ponad 5 minut temu."
+    sent: "&aWysłana wiadomość zwrotna do &e{player}&a: &f{message}"
+    received: "&e{player} &fodpisał: &f{message}"
+
+  # /socialspy command messages
+  socialspy:
+    usage: "&c/socialspy"
+    enabled: "&aObserwacja prywatnych wiadomości &aWŁĄCZONA"
+    disabled: "&cObserwacja prywatnych wiadomości &cWYŁĄCZONA"
+    no_permission: "&cNie masz uprawnień do tej komendy!"
+
+  # General permission message
+  no_permission: "&cNie masz uprawnień do tej komendy!"
